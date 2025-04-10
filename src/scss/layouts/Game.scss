@@ -1,0 +1,81 @@
+@use "../core/variables" as vars;
+
+.game {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: vars.$color-lavender;
+    background-image: url(../images/backg-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 768px;
+
+    &__title {
+        font-family: vars.$font-text;
+        text-align: center;
+        padding: 70px 0 10px;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    &__card {
+        background-color: vars.$color-soft-blue;
+        background-image: repeating-linear-gradient(
+        45deg,
+        #f0b4eb,
+        #f3e8ff 20px
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        border-radius: 8px;
+        font-size: 2rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    
+        &:hover {
+            transform: scale(1.05);
+        }
+    
+        &--resolved {
+            border: 1px solid red;
+            opacity: 0.4;
+        }
+}}
+
+.win {
+    font-family: vars.$font-text;
+    font-weight: 600;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap:  20px;
+    padding: 10px;
+
+    &__reset, &__back {
+        display: inline;
+        text-align: center;
+        width: 25%;
+        min-width: 150px;
+        border: 2px solid vars.$color-lavender;
+        background-color: vars.$color-soft-blue;
+        font-family: vars.$font-text;
+        font-weight: 600;
+        color: vars.$color-lavender;
+        padding: 10px;
+    }
+}

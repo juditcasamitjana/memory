@@ -1,0 +1,53 @@
+@use "../core/variables" as vars;
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: vars.$color-lavender;
+    background-image: url(../images/backg-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 768px;
+
+    &__title {
+        font-family: vars.$font-text;
+        padding: 70px 0 10px;
+        text-align: center;
+    }
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px;    
+    gap: 15px;
+
+    &__newgame, &__howtoplay {
+        display: block;
+        width: 25%;
+        min-width: 150px;
+        border: 2px solid vars.$color-lavender;
+        background-color: vars.$color-soft-blue;
+        font-family: vars.$font-text;
+        font-weight: 600;
+        color: vars.$color-lavender;
+        padding: 10px; 
+    }
+
+    &__credits {
+        display: block;
+        width: 25%;
+        min-width: 150px;
+        border: 2px solid vars.$color-lavender;
+        background-color: vars.$color-soft-blue;
+        font-family: vars.$font-text;
+        font-weight: 600;
+        color: vars.$color-lavender;
+        padding: 10px;
+        margin: 270px;
+    }
+}

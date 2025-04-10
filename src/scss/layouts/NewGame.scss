@@ -1,0 +1,39 @@
+@use "../core/variables" as vars;
+
+.newgame {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: vars.$color-lavender;
+    background-image: url(../images/backg-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 768px;
+
+    &__subtitle {
+        font-family: vars.$font-text;
+        margin: 70px;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__emojis,
+    &__hearts {
+        display: inline;
+        text-align: center;
+        width: 25%;
+        min-width: 150px;
+        border: 2px solid vars.$color-lavender;
+        background-color: vars.$color-soft-blue;
+        font-family: vars.$font-text;
+        font-weight: 600;
+        color: vars.$color-lavender;
+        padding: 10px;
+    }
+}

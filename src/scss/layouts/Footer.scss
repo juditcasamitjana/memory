@@ -1,0 +1,13 @@
+@use "../core/variables" as vars;
+
+.footer {
+    width: 100%;
+    padding: 10px;
+    font-family: vars.$font-title;
+    background-color: vars.$color-blue;
+    color: vars.$color-lavender;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;    
+    bottom: 0;
+}
