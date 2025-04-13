@@ -6,11 +6,11 @@ function NewGame() {
         <section className="newgame">
             <h2 className="newgame__subtitle">Choose the theme</h2>
             <ul className="newgame__list">
-                <li className="newgame__emojis">
-                    <Link to="/newgame/emojis">Emojis</Link>
+                <li >
+                    <Link className="newgame__emojis" to="/newgame/emojis">Emojis</Link>
                 </li>
-                <li className="newgame__hearts">
-                    <Link to="/newgame/hearts">Corazón + Color</Link>
+                <li >
+                    <Link className="newgame__hearts" to="/newgame/hearts">Corazón + Color</Link>
                 </li>
             </ul>
         </section>
