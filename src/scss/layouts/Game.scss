@@ -18,6 +18,10 @@
     }
 }
 
+h1 {
+    text-transform: capitalize;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -107,12 +111,15 @@
         text-align: center;
         width: 25%;
         min-width: 150px;
+        max-width: 150px;
         border: 2px solid vars.$color-lavender;
         background-color: vars.$color-soft-blue;
         font-family: vars.$font-text;
+        font-size: 16px;
         font-weight: 600;
         color: vars.$color-lavender;
         padding: 10px;
+        cursor: pointer;
     }
 }
 

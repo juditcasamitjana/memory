@@ -119,8 +119,8 @@ function Game() {
                 <button className="options__reset" onClick={handleReset}>
                     Reset
                 </button>
-                <Link to="/">
-                    <button className="options__back">Volver</button>
+                <Link className="options__back" to="/">
+                    Volver
                 </Link>
             </section>
         </div>
